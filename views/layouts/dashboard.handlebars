@@ -19,10 +19,7 @@
         <ul class="row justify-items-left">
             <ul class="col"><a href="/">Home</a></ul>
             <ul class="col"><a href="/dashboard">Dashboard</a></ul>
-            {{#unless loggedIn}}
-            <ul class="col"><a href="/login">Login</a></ul>
-            {{/unless}}
-            <ul class="col"><a href="">Logout</a></ul>
+            <ul class="col"><a href="#" id="logout">Logout</a></ul>
         </ul>
     </nav>
 
@@ -43,6 +40,4 @@
 
 </html>
 
-{{#if loggedIn}}
 <script src="/public/js/logout.js"></script>
-{{/if}}
