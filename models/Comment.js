@@ -30,8 +30,14 @@ Comment.init({
             model: 'post',
             key: 'id'
         }
-    }
-}, {
+    },
+    dateCreated: {
+        type: DataTypes.DATEONLY,
+        allowNull: false,
+        defaultValue: DataTypes.NOW,
+    },
+    }, 
+    {
     sequelize,
     freezeTableName: true,
     underscored: true,
